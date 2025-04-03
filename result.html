@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plagiarism Result</title>
+</head>
+<body>
+    <h1>Plagiarism Check Result</h1>
+    <p>Plagiarism Percentage: {{ plagiarism_percentage }}%</p>
+    <h2>Matched Sources:</h2>
+    <ul>
+        {% for source in matched_sources %}
+            <li>{{ source }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Check another text</a>
+</body>
+</html>
